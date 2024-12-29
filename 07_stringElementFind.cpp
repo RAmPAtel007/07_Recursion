@@ -3,6 +3,7 @@
 using namespace std;
 
 void findElement(string& s, char& element , int i, int& n, vector<int>& ans){
+    //pass count for count the variable , int& count 
     //base case 
     if(i>=n){
         // return false; //when data type is bool
@@ -12,9 +13,11 @@ void findElement(string& s, char& element , int i, int& n, vector<int>& ans){
     if(element==s[i]){
         // return true;
         ans.push_back(i); //value ko store krna hai 
+        //for count 
+        //count++;
     }
     //baki recursion krega
-    return findElement(s,element,i+1,n,ans);
+    return findElement(s,element,i+1,n,ans); //pass count into it 
 
 
 }
@@ -25,8 +28,11 @@ int main(){
     int n=s.length();
 
     vector<int> ans;
+    //for count 
+    // int count =0 ;
 
-    findElement(s,element , i, n, ans);
+    findElement(s,element , i, n, ans);//pass count into it 
+    //cout<<count<<endl;
     cout<<"printing ans: " ;
     for(auto val:ans){
         cout<<val<<" ";
