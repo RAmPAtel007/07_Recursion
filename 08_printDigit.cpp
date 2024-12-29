@@ -2,12 +2,11 @@
 using namespace std;
 
 int printDigits(int n){
+    //base class 
     if(n==0){ 
         return 0;
-        } //base class 
-
-   
-   
+        } 
+        
     //recursion fxn
     printDigits(n/10);
 
