@@ -13,7 +13,7 @@ int printDigits(int n){
      // 1 case mera 
     int digit = n%10;
     cout<<digit <<" ";
-}
+} 
 int main(){
     int n=345;
     printDigits(n);
