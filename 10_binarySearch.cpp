@@ -15,6 +15,8 @@ int binarySearch(vector<int> &arr, int s , int e , int target){
 
     //arr[mid]<key right m search
     if(arr[mid]<target){
+        // for passing s as by refrence do 
+        // s=mid+1; // expression ko alag se define krna padega 
         return binarySearch(arr,mid+1,e,target);
     }
     else{
