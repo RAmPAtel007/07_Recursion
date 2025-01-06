@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-int binarySearch(vector<int> arr, int s , int e , int target){
+int binarySearch(vector<int>& arr, int s , int e , int target){
     int mid=(s+e)/2;
     //base case
     if(s>e){//invalid array
