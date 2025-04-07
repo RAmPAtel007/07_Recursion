@@ -11,6 +11,7 @@ void printMax(int arr[], int n, int i, int& maxi){
     //1 case solve kro
     if(arr[i]> maxi){
         maxi=arr[i];
+        //answer store kr rahe the maxi k aander and maxui is a local variable function khtm ho gaya mtlb local varible bhi khtm so mujhe pass by reference krna padega
     }  
 
     printMax(arr,n, i+1, maxi);
