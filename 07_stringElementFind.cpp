@@ -4,6 +4,7 @@ using namespace std;
 
 void findElement(string& s, char& element , int i, int& n, vector<int>& ans){
     //pass count for count the variable , int& count 
+    
     //base case 
     if(i>=n){
         // return false; //when data type is bool

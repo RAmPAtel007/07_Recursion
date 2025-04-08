@@ -21,7 +21,7 @@ void printSubsequence(string str, string output, int i){
     // or
     output = output + str[i];
     
-    //above line is responsible for concatenation of output string ans ith character of str string 
+    //above line is responsible for concatenation of output string and ith character of str string 
     printSubsequence(str, output , i+1);
 
 }
